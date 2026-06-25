@@ -77,8 +77,10 @@ We shall re-open the jupyterhub with the following steps:
 
 ***Start Jupyter*** :
 
+Run the following command in  vs code 
 ```
 uv run jupyter notebook
 ```
+A pop-up message saying "The notebook is running in port 8080". Click "Open" to open the Jupyterhub in the browser.
 Open the notebook that you have used earlier. Throughout the course, you'll copy code from the section notes into notebook cells.
 Then you can continue with the course as usual. 
