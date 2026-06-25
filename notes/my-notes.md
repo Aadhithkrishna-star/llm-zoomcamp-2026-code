@@ -383,3 +383,8 @@ print(answer)
 * `response` contains the full API response.
 * `response.choices[0].message.content` extracts only the generated text.
 * Wrapping the API call inside a function makes the code reusable.
+
+
+
+<img width="1672" height="941" alt="ChatGPT Image Jun 25, 2026, 06_47_53 PM" src="https://github.com/user-attachments/assets/c4089bef-78ed-400b-80ed-c2ca221241dc" />
+
