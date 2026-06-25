@@ -39,6 +39,7 @@ openai_client = OpenAI(
     base_url="https://api.groq.com/openai/v1"
 )
 ```
+You will see a message -- ["Client created successfully!"]
 
 ## 4. Change the Model Name
 
@@ -79,16 +80,5 @@ We shall re-open the jupyterhub with the following steps:
 ```
 uv run jupyter notebook
 ```
-Create a new notebook. Throughout the course, you'll copy code from the section notes into notebook cells.
-
-***Configure the client*** :
-
-```
-from openai import OpenAI
-import os
-
-openai_client = OpenAI(
-    api_key=os.getenv("GROQ_API_KEY"),
-    base_url="https://api.groq.com/openai/v1"
-)
-```
+Open the notebook that you have used earlier. Throughout the course, you'll copy code from the section notes into notebook cells.
+Then you can continue with the course as usual. 
