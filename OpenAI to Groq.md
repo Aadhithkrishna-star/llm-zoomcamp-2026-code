@@ -69,5 +69,26 @@ To switch from OpenAI to Groq, you only need to change:
 The rest of the Zoomcamp code generally works without modification.
 
 ---
+**Session timeout**
+Since you are using the Github codespaces, if it is not active for certain period of time, then the session will be timed out and we need to start again. The same goes for the jupyterhub notebook that was launched from the VS Code terminal.
 
-If you're **editing directly on GitHub**, the `#` and `##` headings will render **after you save the file** or when you're in **Preview** mode. If you're in a plain text editor (Notepad, VS Code, etc.), you'll see the raw Markdown until it's rendered by GitHub.
+We shall re-open the jupyterhub with the following steps: 
+
+***Start Jupyter*** :
+
+```
+uv run jupyter notebook
+```
+Create a new notebook. Throughout the course, you'll copy code from the section notes into notebook cells.
+
+***Configure the client*** :
+
+```
+from openai import OpenAI
+import os
+
+openai_client = OpenAI(
+    api_key=os.getenv("GROQ_API_KEY"),
+    base_url="https://api.groq.com/openai/v1"
+)
+```
